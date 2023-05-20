@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "PressStart2P";
+    src: url("../fonts/PressStart2P.ttf");
+}
+
+@keyframes loadingAnimation {
+    to {
+        rotate: 0turn;
+    }
+
+    from {
+        rotate: 3turn;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.loading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading > div {
+    animation: loadingAnimation 3s infinite;
+    border: 10px solid rgba(0, 0, 0, 0.363);
+    border-right-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.loading > h1 {
+    font-family: "PressStart2P", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    color: white;
+}
